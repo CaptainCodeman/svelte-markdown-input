@@ -1,69 +1,71 @@
 {
-  "name": "svelte-markdown-input",
-  "version": "0.0.1",
-  "type": "module",
-  "keywords": [
-    "svelte",
-    "input",
-    "markdown",
-    "html"
-  ],
-  "files": [
-    "dist"
-  ],
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "svelte": "./dist/index.js"
-    }
-  },
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "homepage": "https://captaincodeman.github.io/svelte-markdown-input/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/captaincodeman/svelte-markdown-input.git"
-  },
-  "author": {
-    "name": "Simon Green",
-    "email": "simon@captaincodeman.com",
-    "url": "https://www.captaincodeman.com/"
-  },
-  "license": "MIT",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "package": "tsup && publint",
-    "prepublishOnly": "npm run package",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
-  },
-  "peerDependencies": {
-    "svelte": "^3.54.0 || ^4.0.0"
-  },
-  "devDependencies": {
-    "@sveltejs/adapter-static": "^2.0.3",
-    "@sveltejs/kit": "^1.27.6",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.2",
-    "@types/node": "^20.10.3",
-    "autoprefixer": "^10.4.2",
-    "github-markdown-css": "^5.1.0",
-    "micromark-extension-gfm": "^3.0.0",
-    "postcss": "^8.4.5",
-    "postcss-load-config": "^5.0.0",
-    "publint": "^0.2.6",
-    "svelte": "^4.2.8",
-    "svelte-check": "^3.6.2",
-    "tailwindcss": "^3.0.12",
-    "tslib": "^2.3.1",
-    "tsup": "^8.0.1",
-    "typescript": "^5.3.2",
-    "vite": "^5.0.4"
-  },
-  "dependencies": {
-    "micromark": "^4.0.0"
-  }
+	"name": "svelte-markdown-input",
+	"description": "A simple Markdown input with preview for Svelte",
+	"version": "0.0.2",
+	"type": "module",
+	"keywords": [
+		"svelte",
+		"input",
+		"markdown",
+		"html"
+	],
+	"files": [
+		"dist"
+	],
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"svelte": "./dist/index.js"
+		}
+	},
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"homepage": "https://captaincodeman.github.io/svelte-markdown-input/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/captaincodeman/svelte-markdown-input.git"
+	},
+	"author": {
+		"name": "Simon Green",
+		"email": "simon@captaincodeman.com",
+		"url": "https://www.captaincodeman.com/"
+	},
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"package": "tsup && publint",
+		"prepublishOnly": "npm run package",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+	},
+	"peerDependencies": {
+		"svelte": "^3.54.0 || ^4.0.0 || ^5.0.0"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.5.7",
+		"@sveltejs/vite-plugin-svelte": "^3.1.0",
+		"@tailwindcss/forms": "^0.5.7",
+		"@tailwindcss/typography": "^0.5.13",
+		"@types/node": "^20.12.7",
+		"autoprefixer": "^10.4.19",
+		"github-markdown-css": "^5.5.1",
+		"micromark-extension-gfm": "^3.0.0",
+		"postcss": "^8.4.38",
+		"postcss-load-config": "^5.0.3",
+		"publint": "^0.2.7",
+		"svelte": "^4.2.15",
+		"svelte-check": "^3.7.0",
+		"tailwindcss": "^3.4.3",
+		"tslib": "^2.6.2",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5",
+		"vite": "^5.2.10"
+	},
+	"dependencies": {
+		"micromark": "^4.0.0"
+	}
 }
